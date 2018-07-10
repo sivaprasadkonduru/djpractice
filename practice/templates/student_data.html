@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body align="center">
+    <h1> Student Data </h1>
+    <table align="center" border="1">
+        <tr>
+            <td> Name </td>
+            <td> Age </td>
+            <td> Standard </td>
+            <td> School </td>
+            <td> Roll No </td>
+            <td> Date of Birth </td>
+        </tr>
+        {% for val in std_data %}
+        <tr>
+            <td> {{ val.name }} </td>
+            <td> {{ val.age }} </td>
+            <td> {{ val.std }} </td>
+            <td> {{ val.school }} </td>
+            <td> {{ val.roll_no }} </td>
+            <td> {{ val.dob }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
